@@ -1,108 +1,271 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-  <title>Tagueamento Inteligente</title>
+  <meta charset="UTF-8">
+  <title>Tagueamento Inteligente | Portfólio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
+    :root {
+      --azul-escuro: #062B55;
+      --azul-principal: #0057C8;
+      --azul-claro: #EAF3FF;
+      --azul-medio: #2F80ED;
+      --cinza-fundo: #F7F9FC;
+      --texto: #1F2937;
+      --branco: #FFFFFF;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial;
-      background: #f7f9fc;
       margin: 0;
-      padding: 20px;
-      color: #333;
+      font-family: Arial, sans-serif;
+      background: var(--cinza-fundo);
+      color: var(--texto);
+      line-height: 1.6;
     }
 
     .container {
-      max-width: 900px;
+      max-width: 980px;
       margin: 0 auto;
+      padding: 24px;
     }
 
-    h1, h2, h3 {
-      color: #1d3557;
+    .hero {
+      background: linear-gradient(135deg, var(--azul-escuro), var(--azul-principal));
+      color: var(--branco);
+      padding: 42px 28px;
+      border-radius: 22px;
+      margin-bottom: 24px;
+      text-align: left;
+    }
+
+    .hero span {
+      display: inline-block;
+      background: rgba(255,255,255,0.14);
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-size: 14px;
+      margin-bottom: 18px;
+      letter-spacing: 1px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 34px;
+      line-height: 1.15;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-top: 18px;
+      color: #EAF3FF;
     }
 
     .section {
-      background: white;
-      padding: 25px;
+      background: var(--branco);
+      padding: 26px;
       margin-bottom: 20px;
-      border-radius: 10px;
+      border-radius: 18px;
+      box-shadow: 0 8px 24px rgba(6, 43, 85, 0.08);
+      text-align: left;
     }
 
-    .btn {
-      background: #1d3557;
-      color: white;
-      padding: 15px 25px;
-      text-decoration: none;
-      border-radius: 8px;
-      display: inline-block;
-      margin-top: 20px;
+    h2 {
+      color: var(--azul-escuro);
+      margin-top: 0;
+      font-size: 26px;
+    }
+
+    h3 {
+      color: var(--azul-principal);
+      margin-bottom: 8px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+    }
+
+    .card {
+      background: var(--azul-claro);
+      border-left: 5px solid var(--azul-principal);
+      padding: 18px;
+      border-radius: 14px;
+    }
+
+    .case {
+      border: 1px solid #DCEBFF;
+      border-radius: 16px;
+      padding: 20px;
+      margin-top: 16px;
+      background: #FFFFFF;
+    }
+
+    .label {
+      font-size: 13px;
+      font-weight: bold;
+      color: var(--azul-escuro);
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-top: 14px;
+      margin-bottom: 4px;
     }
 
     ul {
       padding-left: 20px;
+      margin-top: 8px;
+    }
+
+    .btn {
+      background: var(--azul-principal);
+      color: var(--branco);
+      padding: 16px 24px;
+      text-decoration: none;
+      border-radius: 12px;
+      display: inline-block;
+      margin-top: 16px;
+      font-weight: bold;
+      box-shadow: 0 8px 18px rgba(0, 87, 200, 0.28);
+    }
+
+    .footer {
+      text-align: center;
+      color: #6B7280;
+      font-size: 14px;
+      margin: 28px 0 10px;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 28px;
+      }
+
+      .hero, .section {
+        padding: 22px;
+      }
     }
   </style>
 </head>
 
 <body>
+  <div class="container">
 
-<div class="container">
+    <section class="hero">
+      <span>GA4 • GTM • Tracking • Dados</span>
+      <h1>Portfólio de Tagueamento Inteligente</h1>
+      <p>
+        Ajudo empresas a validar, organizar e analisar seus dados digitais para tomar decisões com mais segurança.
+      </p>
+    </section>
 
-  <!-- APRESENTAÇÃO -->
-  <div class="section">
-    <h1>Jessyka Peregrino</h1>
-    <p><strong>Transformo dados em decisões confiáveis.</strong></p>
+    <section class="section">
+      <h2>Sobre meu trabalho</h2>
+      <p>
+        Sou Jessyka Peregrino, Analista de Dados com foco em implementação e validação de tracking usando
+        Google Tag Manager e Google Analytics 4.
+      </p>
+      <p>
+        Meu objetivo é garantir que os dados coletados representem o comportamento real dos usuários,
+        evitando decisões baseadas em informações incompletas ou inconsistentes.
+      </p>
+    </section>
 
-    <p>
-      Trabalho com implementação e validação de dados digitais utilizando Google Tag Manager (GTM) e Google Analytics 4 (GA4),
-      garantindo que empresas tomem decisões com base em informações reais.
+    <section class="section">
+      <h2>Como posso ajudar</h2>
+
+      <div class="grid">
+        <div class="card">Implementação de GA4 e GTM</div>
+        <div class="card">Auditoria de eventos e conversões</div>
+        <div class="card">Validação de tracking</div>
+        <div class="card">Mapeamento de DataLayer</div>
+        <div class="card">Dashboards e relatórios</div>
+        <div class="card">Análise de origem, dispositivos e comportamento</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Portfólio</h2>
+
+      <div class="case">
+        <h3>Case 1 — Correção de coleta de dados</h3>
+
+        <p class="label">Contexto</p>
+        <p>
+          Após mudanças estruturais no ambiente digital, os dados passaram a apresentar queda e inconsistências na coleta.
+        </p>
+
+        <p class="label">Problema identificado</p>
+        <ul>
+          <li>Bloqueio de scripts por política de segurança.</li>
+          <li>Impacto do Consent Mode na coleta de dados.</li>
+          <li>Tags do GTM não disparando corretamente.</li>
+          <li>Dados subestimados e inconsistentes.</li>
+        </ul>
+
+        <p class="label">Atuação</p>
+        <ul>
+          <li>Análise do comportamento do GTM e GA4.</li>
+          <li>Validação do fluxo de consentimento.</li>
+          <li>Identificação de bloqueios técnicos.</li>
+          <li>Revisão e limpeza do container GTM.</li>
+        </ul>
+
+        <p class="label">Resultado</p>
+        <p>
+          Retomada da coleta, redução de inconsistências e base mais confiável para análise e tomada de decisão.
+        </p>
+      </div>
+
+      <div class="case">
+        <h3>Case 2 — Mapeamento de eventos e geração de leads</h3>
+
+        <p class="label">Contexto</p>
+        <p>
+          Empresas com site ativo, botões de contato e canais de conversão, mas sem clareza sobre o comportamento real dos usuários.
+        </p>
+
+        <p class="label">Problema identificado</p>
+        <ul>
+          <li>Falta de rastreamento de cliques importantes.</li>
+          <li>Dificuldade em medir geração de contatos e leads.</li>
+          <li>Ausência de dados sobre origem e comportamento dos usuários.</li>
+        </ul>
+
+        <p class="label">Atuação</p>
+        <ul>
+          <li>Mapeamento de eventos estratégicos.</li>
+          <li>Configuração de tracking no GTM.</li>
+          <li>Organização de parâmetros no GA4.</li>
+          <li>Estruturação de base para análise por origem, região e dispositivo.</li>
+        </ul>
+
+        <p class="label">Resultado</p>
+        <p>
+          Mais visibilidade sobre o que gera contato, melhor entendimento da jornada do usuário e apoio à otimização de campanhas.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" style="text-align:center;">
+      <h2>Precisa validar o tracking do seu site?</h2>
+      <p>
+        Posso te ajudar a entender se seus dados estão sendo coletados corretamente.
+      </p>
+
+      <a class="btn" href="https://wa.me/5511919969081">
+        Falar comigo no WhatsApp
+      </a>
+    </section>
+
+    <p class="footer">
+      @tagueamentointeligente • Dados que geram decisões melhores
     </p>
+
   </div>
-
-  <!-- SERVIÇOS -->
-  <div class="section">
-    <h2>Como posso ajudar</h2>
-
-    <ul>
-      <li>Implementação de GA4 e GTM</li>
-      <li>Auditoria de tracking</li>
-      <li>Validação de eventos e conversões</li>
-      <li>Mapeamento de DataLayer</li>
-      <li>Criação de dashboards e relatórios</li>
-    </ul>
-  </div>
-
-  <!-- PORTFÓLIO -->
-  <div class="section">
-    <h2>Portfólio</h2>
-
-    <h3>Correção de coleta de dados (Consent Mode e CSP)</h3>
-    <p><strong>Problema:</strong> Queda e inconsistência nos dados após mudanças no site.</p>
-    <p><strong>Ação:</strong> Análise do GTM/GA4, validação de consentimento e ajustes técnicos.</p>
-    <p><strong>Resultado:</strong> Retomada da coleta e dados mais confiáveis.</p>
-
-    <hr>
-
-    <h3>Mapeamento de eventos e geração de leads</h3>
-    <p><strong>Problema:</strong> Falta de visibilidade sobre cliques e geração de contatos.</p>
-    <p><strong>Ação:</strong> Estruturação de eventos e organização do tracking.</p>
-    <p><strong>Resultado:</strong> Clareza sobre comportamento e origem dos leads.</p>
-  </div>
-
-  <!-- CTA -->
-  <div class="section" style="text-align: center;">
-    <h2>Precisa validar o tracking do seu site?</h2>
-    <p>Fale comigo e vamos analisar seu cenário.</p>
-
-    <a class="btn" href="https://wa.me/5511919969081">
-      Falar no WhatsApp
-    </a>
-  </div>
-
-</div>
-
 </body>
 </html>
-
-
